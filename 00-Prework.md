@@ -5,7 +5,7 @@ There are quite a few tasks and learning topics that are necessary to take care 
 
 I don’t believe you can really learn to program by watching a few videos and answering some questions (and if you believed that, you probably wouldn’t be coming to The Iron Yard). However, skill acquisition takes a long time, and this work will help introduce you to some of the ideas and skills that will form the foundation of your in-person learning experience.
 
-This work should be completed by May 17 and any deliverables should be emailed to me by then. I will assume that you have completed this work before class, so you will likely feel very far behind if you haven’t finished when we start class on May 18th.
+This work should be completed by October 3rd and any deliverables should be emailed to me by then. I will assume that you have completed this work before class, so you will likely feel very far behind if you haven’t finished when we start class on October 5th.
 
 In order to complete some of these tasks, you will need to register for an account with Treehouse. Treehouse is free for 14 days (which should be more than enough to finish the required courses), and is $25/month after the trial.
 
