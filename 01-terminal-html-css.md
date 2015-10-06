@@ -69,6 +69,18 @@ $ touch myFile.txt
 ```
 Creates a new file.
 
+```
+$ cat myFile.txt
+
+```
+Reads the contents of myFile.txt in your shell.
+
+```
+$ echo "I am going into myFile" >> myFile.txt
+
+```
+Adds the line "I am going into myFile" to myFile.txt
+
 ## HTML
 
 Today we talked about HTML in general, what it actually is and some of the most used tags.
