@@ -8,11 +8,10 @@ We talked about a few things:
 - [install atom](https://atom.io/docs/v0.194.0/getting-started-installing-atom#atom-on-mac)
 - [install google chrome](https://www.google.com/intl/en/chrome/browser/desktop/index.html)
 - terminal basics
-- install iTerm2
-- install Oh-My-Zsh
+- [install iTerm2](http://iterm2.com/)
+- [install Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
 - html introduction
 - css introduction
-- basic chrome dev tools
 
 ## Terminal
 
