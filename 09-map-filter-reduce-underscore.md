@@ -4,6 +4,7 @@ We left off last time learning about javascript functions, for loops, and most f
 
 - .map
 - .filter
+- .reduce
 
 We also will take a look at Underscore.js, an awesome javascript library that provides a ton of other functions that make our lives as programmers all the better.
 
@@ -78,11 +79,45 @@ arr.filter(function(elm,idx,arr){
 
 Here, I'm checking if each element is even (i.e., if the remainder of the element divided by 2 is equal to 0).  It looks at 1, nope! Then 2, yep, [2]. 3, nope!. 4, yep! [2,4]. 5, nope!. Done. So what's returned? `[2,4]`.  That's it.
 
+### Reduce
+
+Reduce is another Higher Order function that takes an array and basically 'reduces' that array to one thing.  You see it commonly used to add an array of numbers together, but it has other utilities, like concatenating an array of strings, flattening an array of arrays, and more.  Let's take a look.
+
+```js
+var arr = [1,2,3,4,5]
+arr.reduce(function(accumulator,currentValue,idx,arr) {
+  return accumulator + currentValue;
+});
+```
+So what happens? First, accumulator will equal the first item in the array, and the currentValue will equal the second.  So in the function above, 1 is added 2 to, which return 3.  currentValue is then the next item in the array, 3, and added to the accumulator, 6.  currentValue is then 4, added to 6, 10. currentValue = 5, 5 + 10 = 15. The returned value is 15.
+
+ Like, map, filter, and forEach, you can specify which arguments your callback function will take.  You can also declare your callback function before you give it to the reduce function.
+
+###Underscore.js
+
+If you like manipulating data, and you like javascript, then Underscore.js will become your best friend.  It gives you a huge library of helper functions that you can use in your own .js files.  First, `cd` into your folder of choice.  If you have bower installed,
+
+`bower install underscore`
+
+This should install the underscore package into your current directory. If you look at the documentation on [Underscore.js](underscorejs.org), it has a plethora of new functions for you to peruse.  Let's take a look at one of my favorites. `_.contains(array, value)`  This function checks to see if the array you given contains a certain value.  Sounds pretty simple, let's check it out!.
+
+```js
+var arrayOfArrays = [[1,2,3,'no'],[1,2,3,'yes'],[1,2,3,'no']]
+var arrayOfArrays.filter(function(elm) {
+  return _.contains(elm,'yes');
+});
+//returns [1,2,3,'yes']
+```
+
+This time, we have an array of arrays, similar to what you might see in a json object.  So the `elm` is referring to an array, not the items in the arrays.  I want to look only return arrays that have the value 'yes' inside the array.  The first array does not have a 'yes', but the second one does, so filter returns that entire array.  Pretty awesome.  Imagine if you wanted to only look at posts on etsy that contain the word 'cashmere' (I don't know why you would), BUT NOW YOU CAN!
 
 ##Resources
 
 [.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 [.filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+[.reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+[Underscore.js](underscorejs.org)
+
 
 Until next time,
 
